@@ -1,0 +1,19 @@
+{
+  "name": "web-rag-pipeline",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@qdrant/js-client-rest": "^1.15.1",
+    "axios": "^1.12.2",
+    "chromedriver": "^140.0.4",
+    "dotenv": "^17.2.2",
+    "selenium-webdriver": "^4.35.0"
+  }
+}
