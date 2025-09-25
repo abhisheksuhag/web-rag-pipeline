@@ -2,7 +2,7 @@ import { Builder , By, until} from "selenium-webdriver";
 import * as fs from "fs";
 require("chromedriver");
 
-(async function example() {
+export async function scrapeWired() {
     const driver = await new Builder().forBrowser('chrome').build();
     try {
         await driver.get('https://www.wired.com/category/gear/');
@@ -29,4 +29,4 @@ require("chromedriver");
     } finally {
         await driver.quit();
     }
-})();
+};
